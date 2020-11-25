@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
         appBar: AppBar(title: Text("title")),
     // 앱의 상단 타이틀
-    body: Text("플러터 앱 화면에 표시되는 텍스트!")
-    // 앱 화면에 표시되는 텍스트
+    // body: Text("플러터 앱 화면에 표시되는 텍스트!")
+    // // 앱 화면에 표시되는 텍스트
+    body: Icon (Icons.send, color:Colors.blueAccent)
+    // 원하는 아이콘을 지정, 색도 바꿀 수 있다.
         ),
     );
   }
