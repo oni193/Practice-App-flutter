@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
          appBar: AppBar(title: Text("title")),
             // 앱의 상단 타이틀
-         body: Column ( //위젯을 세로로 배치
+         body: Row ( //위젯을 가로로 배치
+           mainAxisAlignment: MainAxisAlignment.spaceAround,
+           //주 방향으로 어떻게 위젯을 배열할지 정함.
+           //MainAxisAlignment는 간격이 서로 일정하게 벌려주는 것을 말한다.
            children: <Widget>[
              Text("나의 첫 플러티 앱"),
              Text("이제 앱 개발 해보자"),
