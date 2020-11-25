@@ -12,11 +12,14 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       // 구글 기본 디자인인 Material Design 을 써서 앱을 만든다.
         title: 'My Practice Flutter App',
-        home: Scaffold
-        appBar: AppBar(title: Text("타이틀")),
+        debugShowCheckedModeBanner: false,
+        //debug 표시를 보지 않는다.
+        home: Scaffold(
+        appBar: AppBar(title: Text("title")),
     // 앱의 상단 타이틀
-    body: Text("첫 플러터 앱")
+    body: Text("플러터 앱 화면에 표시되는 텍스트!")
     // 앱 화면에 표시되는 텍스트
+        ),
     );
   }
 }
